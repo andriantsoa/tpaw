@@ -9,7 +9,6 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="formulaire.js"></script>
 
         <!-- Place favicon.ico in the root directory -->
         
@@ -18,47 +17,39 @@
         <!--<script src="js/main.js"></script>-->
     </head>
     <body>        
-        <h1>tp2 Andriantsoa</h1>
-        <div class="form">
-            <table class="tab">
-                <tr>
-                    <h2>Saisie d'une fiche "Personne"</h2>
-                </tr>
+        <h1>tp2</h1>
+        <div>
+            <table>
                 <tr>
                     <td>Nom</td>
-                    <td>
-                        <input type="text" placeholder="Votre nom" name="nom" id="nom">
-                    </td>
+                    <td><input type="text" minlength="5" maxlength="20" placeholder="Votre nom"></td>
                 </tr>
                 <tr>
                     <td>Prénom</td>
-                    <td>
-                        <input type="text" placeholder="Votre prenom" id="prenom" name="prenom">
-                    </td>
+                    <td><input type="text" minlength="5" maxlength="20" placeholder="Votre prenom"></td>
                 </tr>
                 <tr>
                     <td>Date de naissance</td>
-                    <td><input type="date" id="date" name="date"></td>
+                    <td><input type="date"></td>
                 </tr>
                 <tr>
                     <td>Adresse postale</td>
-                    <td><input type="text" id="address" name="address" placeholder="votre adresse"></td>
+                    <td><input type="text" minlength="5" maxlength="50" placeholder="votre adresse"></td>
                 </tr>
                 <tr>
                     <td>Adresse mail</td>
-                    <td><input type="email" id="email" name="email" placeholder="prenom@domaine.com"></td>
+                    <td><input type="email" minlength="5" maxlength="30" placeholder="prenom@domaine.com"></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input type="button" value="valider" onclick="validation()"></td>
+                    <td><input type="button" value="valider"></td>
                 </tr>
             </table>
-            <br>
-            <div id="error"></div>
-            <div id="resultat"></div>
         </div>
-        
+        <div id="error"></div>
+        <div id="resultat"></div>
         <!-- Add your site or application content here -->
+        <p>Hello world! This is HTML5 Boilerplate.</p>
         <img src="../galilee.png" alt="Logo Galilee"/>
     </body>
 </html>
