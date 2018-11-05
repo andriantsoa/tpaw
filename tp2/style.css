@@ -1,0 +1,35 @@
+body{
+  width: 90%;
+  background-color: white;              
+  font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.form {
+  width: 100%;
+  background-color: silver;
+  margin: 15px;
+  padding: 15px;
+}
+
+.tab {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+}
+
+#error {
+  display: none;
+  background-color: pink;
+  padding : 5px;
+  border: 1px solid black;
+}
+
+#resultat {
+  display: none;
+  background-color: green;
+  padding : 5px;
+  border: none;
+  color: blanchedalmond;
+}
