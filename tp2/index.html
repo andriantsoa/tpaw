@@ -1,64 +1,61 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP2</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="formulaire.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TP2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Place favicon.ico in the root directory -->
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="js/main.js"></script>-->
-    </head>
-    <body>        
-        <h1>tp2 Andriantsoa</h1>
-        <div class="form">
-            <table class="tab">
-                <tr>
-                    <h2>Saisie d'une fiche "Personne"</h2>
-                </tr>
-                <tr>
-                    <td>Nom</td>
-                    <td>
-                        <input type="text" placeholder="Votre nom" name="nom" id="nom">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Prénom</td>
-                    <td>
-                        <input type="text" placeholder="Votre prenom" id="prenom" name="prenom">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Date de naissance</td>
-                    <td><input type="date" id="date" name="date"></td>
-                </tr>
-                <tr>
-                    <td>Adresse postale</td>
-                    <td><input type="text" id="address" name="address" placeholder="votre adresse"></td>
-                </tr>
-                <tr>
-                    <td>Adresse mail</td>
-                    <td><input type="email" id="email" name="email" placeholder="prenom@domaine.com"></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="button" value="valider" onclick="validation()"></td>
-                </tr>
-            </table>
-            <br>
-            <div id="error"></div>
-            <div id="resultat"></div>
-        </div>
-        
-        <!-- Add your site or application content here -->
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="formulaire.js"></script>
+</head>
+
+<body>
+    <p style="text-align: center;">
+        <img src="../galilee.png" alt="Logo Galilee" />
+    </p>
+    <h1>tp2 Andriantsoa</h1>
+    <div class="form">
+        <table class="tab">
+            <tr>
+                <h2>Saisie d'une fiche "Personne"</h2>
+            </tr>
+            <tr>
+                <td>Nom</td>
+                <td>
+                    <input type="text" placeholder="Votre nom" name="nom" id="nom">
+                </td>
+            </tr>
+            <tr>
+                <td>Prénom</td>
+                <td>
+                    <input type="text" placeholder="Votre prenom" id="prenom" name="prenom">
+                </td>
+            </tr>
+            <tr>
+                <td>Date de naissance</td>
+                <td><input type="date" id="date" name="date"></td>
+            </tr>
+            <tr>
+                <td>Adresse postale</td>
+                <td><input type="text" id="address" name="address" placeholder="votre adresse"></td>
+            </tr>
+            <tr>
+                <td>Adresse mail</td>
+                <td><input type="email" id="email" name="email" placeholder="prenom@domaine.com"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input id="btn" type="button" value="valider" onclick="validation()"></td>
+            </tr>
+        </table>
+        <br>
+        <div id="error"></div>
+        <div id="resultat"></div>
+    </div>
+</body>
+
 </html>
