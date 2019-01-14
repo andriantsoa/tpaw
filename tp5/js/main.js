@@ -88,7 +88,7 @@ window.onload = function () {
         
         fetch('https://api.openweathermap.org/data/2.5/weather?q='+ _city.name + '&units=metric&lang=fr&APPID=' + app.weatherKey)
           .then(function (response) {
-            app.mapUrl = "https://maps.googleapis.com/maps/api/staticmap?center="+ _city.name + "&zoom=14&size=400x400&key="+ app.mapKey;
+            app.mapUrl = "https://maps.googleapis.com/maps/api/staticmap?center="+ _city.name + "&zoom=14&size=600x600&key="+ app.mapKey;
             return response.json();
           })
           .then(function (json) {
